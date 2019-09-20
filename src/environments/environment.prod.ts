@@ -12,10 +12,10 @@ export const environment = {
     scope: ['email', 'profile', 'openid'],
 
     // Callback URL
-    redirectSignIn: 'https://mental-health1.herokuapp.com/', // or 'exp://127.0.0.1:19000/--/', 'myapp://main/'
+    redirectSignIn: 'https://mental-health1.herokuapp.com', // or 'exp://127.0.0.1:19000/--/', 'myapp://main/'
 
     // Sign out URL
-    redirectSignOut: 'https://mental-health1.herokuapp.com/', // or 'exp://127.0.0.1:19000/--/', 'myapp://main/'
+    redirectSignOut: 'https://mental-health1.herokuapp.com', // or 'exp://127.0.0.1:19000/--/', 'myapp://main/'
 
     // 'code' for Authorization code grant,
     // 'token' for Implicit grant
