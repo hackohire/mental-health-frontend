@@ -1,0 +1,14 @@
+{
+	"auth": {
+		"mentalhealth30e8e6db": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"storage": {
+		"mentalhealth": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

@@ -1,0 +1,71 @@
+{
+    "identityPoolName": "mentalhealth30e8e6db_identitypool_30e8e6db",
+    "allowUnauthenticatedIdentities": true,
+    "lambdaLogPolicy": "mental_30e8e6db_lambda_log_policy",
+    "openIdLambdaRoleName": "mental_30e8e6db_openid_lambda_role",
+    "openIdRolePolicy": "mental_30e8e6db_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "mental_30e8e6db_openid_lambda_iam_policy",
+    "openIdLogPolicy": "mental_30e8e6db_openid_lambda_log_policy",
+    "userPoolName": "mentalhealth30e8e6db_userpool_30e8e6db",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "mental30e8e6db_sns-role",
+    "roleExternalId": "mental30e8e6db_role_external_id",
+    "policyName": "mental30e8e6db-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "mental30e8e6db_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "mental30e8e6db_totp_lambda_role",
+    "mfaLambdaLogPolicy": "mental30e8e6db_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "mental30e8e6db_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "mental30e8e6db_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "mental30e8e6db_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "mental30e8e6db_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "mental30e8e6db_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "mentalhealth30e8e6db",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default",
+    "usernameAttributes": [
+        "email"
+    ]
+}
